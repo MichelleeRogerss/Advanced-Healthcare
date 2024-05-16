@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Advanced Healthcare - Superior healthcare through advanced technology.">
+    <title>About Us - Advanced Healthcare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-purple: #2a005e;
+            --hover-purple: #45008e;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            background-color: var(--dark-purple);
+            color: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a:focus {
+            background-color: var(--hover-purple);
+            border-radius: 5px;
+        }
+        .content-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: var(--dark-purple);
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: var(--dark-purple);
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px; /* Ensure it's not too tall */
+            z-index: 1000; /* Ensures it stays on top of other content */
+        }
+        .advanced-healthcare {
+            font-style: italic;
+            font-size: 20px;
+        }
+        @media (max-width: 768px) {
+            header, nav {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="advanced-healthcare"><strong>Advanced Healthcare</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="content.html">Analytics</a>
+            <a href="https://link.springer.com/article/10.1007/s10729-020-09542-0" target="_blank">Research</a>
+            <a href="our_team.html">Our Team</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <div class="content-section">
+        <h1>About Us</h1>
+        <p>Our goal at Advanced Healthcare is to provide superior healthcare through advanced technology.</p>
+        <h2>Problem Summary</h2>
+        <p>
+            There is an issue in healthcare management, especially in predicting the length of stay for patients being admitted into hospitals. Being able to predict length of stay is crucial for managing hospital resources and improving hospital and healthcare efficiency. Our primary objective is to develop a predictive model that can estimate the length of stay for a given patient. We hope to use regression, decision trees, and clustering to find the most effective predictors. By solving this issue, hospitals will be able to properly allocate bed space, fix staffing needs, and properly utilize equipment.
+        </p>
+        <h2>Data We Are Using</h2>
+        <p>
+            For our goal of predicting the length of stay for each hospital patient, we will be utilizing a Kaggle Dataset. AV: Healthcare Analytics II. This dataset contains a separate training data file, which includes patient, hospital, and length of stay data on a case-by-case basis. It also contains a feature dictionary that provides descriptions and possibly data types for the features in the training data. Additionally, it includes testing data that contains the features related to patients and hospitals but lacks length of stay data.
+        </p>
+        <h2>How We Plan to Address the Problem</h2>
+        <p>
+            One way that we can address the problem is by utilizing a linear regression model that helps determine the possible independent variables that have a significant relationship to the length of stay (dependent variable). Additionally, we can use a heatmap to showcase a visual representation of how strongly correlated or not these variables are to each other. We can also utilize a CART (Classification and Regression Tree) that can simplify the data, making it easier to interpret as well as break down the data to understand its significance and overall relationships. Furthermore, we plan to utilize classification trees to separate groups based on characteristics that would ease the process of prediction when it comes to the length of stay.
+        </p>
+    </div>
+    <footer>
+        <p>Contact: info@advancedhealthcare.uw.edu | 206-345-10983</p>
+    </footer>
+</body>
+</html>

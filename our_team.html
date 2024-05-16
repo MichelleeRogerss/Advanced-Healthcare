@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the diverse and dynamic team behind our tech industry innovations.">
+    <title>Our Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-purple: #2a005e;
+            --hover-purple: #45008e;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            background-color: var(--dark-purple);
+            color: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a:focus {
+            background-color: var(--hover-purple);
+            border-radius: 5px;
+        }
+        .team-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .team-section img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        h1 {
+            color: var(--dark-purple);
+        }
+        .team-info {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .team-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .team-member {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: calc(25% - 20px); /* Adjust width to fit 4 members per row */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: var(--dark-purple);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px; /* Ensure it's not too tall */
+            z-index: 1000; /* Ensures it stays on top of other content */
+        }
+        .advanced-healthcare {
+            font-style: italic;
+            font-size: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-section img {
+                width: 100%;
+            }
+            .team-member {
+                width: calc(50% - 20px); /* Adjust width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="advanced-healthcare"><strong>Advanced Healthcare</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="content.html">Analytics</a>
+            <a href="https://link.springer.com/article/10.1007/s10729-020-09542-0" target="_blank">Research</a>
+            <a href="our_team.html">Our Team</a>
+            <a href="about.html">About Us</a> <!-- Added "About Us" link -->
+        </nav>
+    </header>
+    <div class="team-section">
+        <h1>Our Team</h1>
+        <img src="DALL·E 2024-05-14 10.24.58 - Create an ultra-realistic 'meet the team' image for a tech industry web page, with a focus on diversity. The team includes_ a Black woman with short a.webp" alt="Our Team">
+        <div class="team-info">
+            <div class="team-row">
+                <div class="team-member">
+                    <p><strong>Michelle Rogers</strong></p>
+                    <p>Chief Executive Officer (CEO)</p>
+                </div>
+                <div class="team-member">
+                    <p><strong>Ravi Patel</strong></p>
+                    <p>Chief Technology Officer (CTO)</p>
+                </div>
+                <div class="team-member">
+                    <p><strong>Marco Silva</strong></p>
+                    <p>Chief Operations Officer (COO)</p>
+                </div>
+                <div class="team-member">
+                    <p><strong>Liam O'Reilly</strong></p>
+                    <p>Chief Marketing Officer (CMO)</p>
+                </div>
+            </div>
+            <div class="team-row">
+                <div class="team-member">
+                    <p><strong>Sakura Tanaka</strong></p>
+                    <p>Chief Data Scientist (CDS)</p>
+                </div>
+                <div class="team-member">
+                    <p><strong>Jin Park</strong></p>
+                    <p>Chief Financial Officer (CFO)</p>
+                </div>
+                <div class="team-member">
+                    <p><strong>Isabella Martinez</strong></p>
+                    <p>Chief Product Officer (CPO)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact: info@advancedhealthcare.uw.edu | 206-345-10983</p>
+    </footer>
+</body>
+</html>
